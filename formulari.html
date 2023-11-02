@@ -2,14 +2,56 @@
 <html>
     <head> 
         <title> Pagina de formulari</title>
+        <link rel="stylesheet" href="formulari_estils.css">
     </head>
     <body>
         <h1>Subscriu-te al noticiari de l'Institut TIC de Barcelona</h1>
-        <form>
-            <label for="correu">Correu electrònic:</label><br>
-            <input type="text" id="correu" Correu electrònic><br>
-            <label for="numèrica">Entrada númerica:</label><br>
-            <input type="text" id="lname" name="lname">
-          </form>               
+        <form action="resultat.html">
+            <h3>Primer, explica'ns qui ets</h3>
+            <label for="Nom_i_cognoms">Nom i cognom:</label>
+            <input type="text" id="Nom_i_cognom" Nom i cognom="Nom_i_cognom" value>
+            <br>
+            <label class="Correu_electrònic">Correu electrònic:</label>
+            <input class="Correu_electrònic" type= "text" id="Correu_electrònic" Correu electrònic="Correu_electrònic" value> 
+            <br>
+            <label for="Edat">Edat</label>
+            <input id="Edat" type="text" id="Edat" Edat="Edat" value>
+            <br>
+            <h3>Quin cicle estàs estudiant?</h3>
+            <input type="radio" name="movimiento" value="ASIX">ASIX</label>
+            <label class="radio-inline" for="ASIX"></label>
+            <br>
+            <input type="radio" name="movimiento" value="DAW">DAM</label>
+            <label class="radio-inline" for="DAW"></label>
+            <br>
+            <input type="radio" name="movimiento" value="DAW">DAW</label>
+            <label class="radio-inline" for="DAM"></label>
+            <br>
+            <br>
+            <label for="cicle">I en quin curs?</label>
+            <select name="cicle" id="cicle">
+            <option value="Primer">Primer</option>
+            <option value="Segon">Segon</option>
+            </select>
+            <br>
+            <br>
+            <h3>Marca els temes que vulguis estar sempre al dia!</h3>
+            <input type="checkbox" id="Intel·ligència artificial" name="Intel·ligència artificial" value="Intel·ligència artificial">
+            <label for="Intel·ligència artificial"> Intel·ligència artificial</label><br>
+            <input type="checkbox" id="Computació quàntica" name="Computació quàntica" value="Computació quàntica">
+            <label for="Computació quàntica"> Computació quàntica</label><br>
+            <input type="checkbox" id="Supercomputadors" name="Supercomputadors" value="Supercomputadors">
+            <label for="Supercomputadors"> Supercomputadors</label><br>
+            <input type="checkbox" id="Recerca en algorísmia" name="Recerca en algorísmia" value="Recerca en algorísmia">
+            <label for="Recerca en algorísmia"> Recerca en algorísmia</label><br>
+            <br>
+            <p1> Hi ha algun tema més que t'interessi? Explica'ns-ho!</p1>
+            <br>
+            <br>
+            <textarea class="textarea" id="text" name="text" rows="4" cols="50">També m'agradaria saber les últimes novetats sobre...</textarea>
+            <br>
+            <br>
+            <button class="boto_personalitzat" type="submit">Subscriu-me</button>
+        </form>               
     </body>
 </html>
